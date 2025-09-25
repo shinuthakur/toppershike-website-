@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Topper's Hike provides comprehensive book solutions and resource videos to help students succeed." />
+    <title>Topper's Hike - Your Key to Success</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header class="hero" id="main-content" role="main">
+        <nav class="navbar">
+            <div class="hamburger" aria-label="Toggle navigation" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#upload-section" class="nav-link">Upload Solution</a></li>
+                <li><a href="#videos-list-section" class="nav-link">Solutions</a></li>
+                <li><a href="#contact-section" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Company Logo -->
+        <img src="074cca5a-0472-43f4-a46d-a3d96ff7a27d.jpg" alt="Topper's Hike Logo" class="company-logo" />
+        <h1 class="company-name">topper's-hike</h1>
+        <p class="tagline">Your Key to Success</p>
+        <p class="founder">Founded by <span class="founder-name">Shivam Thakur</span></p>
+    </header>
+    <main>
+        <section class="about" id="about">
+            <h2>About Us</h2>
+            <p>Topper's Hike is dedicated to providing comprehensive book solutions and resources to help students achieve academic excellence. Explore our curated solution videos and unlock your path to success!</p>
+        </section>
+        <!-- PASSWORD-PROTECTED UPLOAD AREA -->
+        <section class="upload-section" id="upload-section">
+            <h2>Upload Solution (Images/Videos)</h2>
+            <form id="upload-password-form">
+                <input type="password" id="upload-password" placeholder="Enter admin password" autocomplete="off" required />
+                <button type="submit" class="btn">Unlock Uploads</button>
+            </form>
+            <div id="upload-area-wrapper" style="display:none;">
+                <div class="upload-area" id="uploadArea">
+                    Drag & Drop files here or click to browse
+                </div>
+                <input type="file" id="fileInput" multiple style="display:none;" accept="image/*,video/*" />
+                <form id="solution-details-form">
+                    <input type="text" id="title" placeholder="Solution Title" required />
+                    <input type="text" id="bookTitle" placeholder="Book Title" required />
+                    <input type="text" id="chapterNumber" placeholder="Chapter Number" required />
+                    <input type="text" id="description" placeholder="Description" required />
+                    <input type="url" id="youtubeUrl" placeholder="YouTube Video URL (optional)" />
+                    <button type="button" class="btn" id="uploadBtn">Upload</button>
+                    <button type="button" class="btn gray-btn" id="logoutUploadBtn">Logout</button>
+                </form>
+            </div>
+        </section>
+        <section class="video-gallery" id="videos-list-section">
+            <h2>Solution Gallery</h2>
+           <div id="solutionsGrid" class="solutions-grid"></div>
+        </section>
+        <section class="contact" id="contact-section">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Name" required />
+                <input type="email" placeholder="Email" required />
+                <input type="text" placeholder="Subject" required />
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Topper's Hike. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+</html>
