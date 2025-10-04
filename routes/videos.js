@@ -16,7 +16,7 @@ const {
   getUniqueBooks,
   getChaptersByBook,
   getVideoStats
-} = require('../controllers/videoController');
+} = require('./videoController');
 
 // Import middleware
 const { uploadMiddleware } = require('../middleware/upload');
@@ -66,5 +66,6 @@ router.put('/:id', validateObjectId(), uploadMiddleware, videoValidationRules(),
 // @desc    Delete video (soft delete)
 // @access  Public (should be protected in production)
 router.delete('/:id', validateObjectId(), deleteVideo);
+
 
 module.exports = router;
