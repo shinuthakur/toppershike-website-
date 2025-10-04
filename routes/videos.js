@@ -16,7 +16,7 @@ const {
   getUniqueBooks,
   getChaptersByBook,
   getVideoStats
-} = require('./videoController');
+} = require('../videoController');
 
 // Import middleware
 const { uploadMiddleware } = require('../middleware/upload');
@@ -69,3 +69,4 @@ router.delete('/:id', validateObjectId(), deleteVideo);
 
 
 module.exports = router;
+
