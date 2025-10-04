@@ -13,7 +13,7 @@ const path = require('path');
 require('dotenv').config();
 
 // Import configurations
-const connectDB = require('./config/database');
+const connectDB = require('./database');
 
 // Import routes
 const videoRoutes = require('./routes/videos');
@@ -126,5 +126,6 @@ process.on('SIGTERM', () => {
     console.log('Process terminated');
   });
 });
+
 
 module.exports = app;
