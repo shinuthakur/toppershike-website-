@@ -19,7 +19,7 @@ const {
 } = require('../videoController');
 
 // Import middleware
-const { uploadMiddleware } = require('../middleware/upload');
+const { uploadMiddleware } = require('../upload');
 const {
   videoValidationRules,
   validateObjectId,
@@ -69,4 +69,5 @@ router.delete('/:id', validateObjectId(), deleteVideo);
 
 
 module.exports = router;
+
 
