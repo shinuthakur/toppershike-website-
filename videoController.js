@@ -3,7 +3,7 @@
  * Handles all business logic for video/solution operations
  */
 
-const Video = require('../models/Video');
+const Video = require('../Video');
 const { validationResult } = require('express-validator');
 const path = require('path');
 const fs = require('fs').promises;
@@ -492,4 +492,5 @@ module.exports = {
   getUniqueBooks,
   getChaptersByBook,
   getVideoStats
+
 };
